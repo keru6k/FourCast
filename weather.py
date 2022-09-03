@@ -3,6 +3,9 @@ try:
 except Exception as L:
     print(L)
 
+def exitApp():
+    input('Please press any to exit')
+    sys.exit
 
 def main():
 
@@ -28,6 +31,6 @@ def main():
     print(f"Weather in {location}: {weatherType}")
     print(f"Temp in {location}: {int(tkvnCels)}°C")
     #if in command line like CMD that auto closes after the program is done:
-    input('Please press any to exit')
+    exitApp()
     
 main()
